@@ -1,5 +1,6 @@
 {
   "update": true,
   "warn_outdated": false,
-  "download": "https://github.com/Pugmatt/BedrockConnect/releases/latest/download/BedrockConnect-1.0-SNAPSHOT.jar"
+  "download": "https://github.com/Pugmatt/BedrockConnect/releases/latest/download/BedrockConnect-1.0-SNAPSHOT.jar",
+  "api_url": "https://api.github.com/repos/Pugmatt/BedrockConnect/releases/latest"
 }
