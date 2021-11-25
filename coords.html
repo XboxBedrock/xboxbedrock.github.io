@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Dynamic Form</title>
+<script language="javascript" type="text/javascript" >
+function changeIt()
+{
+
+document.getElementById("p1").innerHTML = (document.getElementById('mytext').value.replace(/[^a-zA-Z0-9. ]/g, "").replace("  ", " "))
+
+}
+</script>
+</head>
+<body>
+
+<p id="p2">Google Earth Pro to Minefact coords</p>
+
+<form name="form">
+<input type="button" value="convert" onClick="changeIt()">
+<br><input type='text' id='mytext' >
+<div id="createTextbox"></div>
+<p id="p1">None</p>
+</form> 
+</body>
+</html>
