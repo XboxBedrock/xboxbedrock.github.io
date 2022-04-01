@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript" language="javascript" src="json.js"></script> 
+        <script>
+            function changeIt()
+                {
+                    console.log(jsonData)
+                    document.getElementById("p1").innerHTML = jsonData[("(" + document.getElementById('mytext').value.replace("(", "").replace(")", "").split(",").map(e => e.trim()).join(", ") + ")")];
+
+                }
+        </script>
+    </head>
+    <body>
+        <p id="p2">Coords split by comma, eg 250, 288</p>
+        <p id="p3">undefined means it does not or is empty</p>
+        <input type="button" value="convert" onClick="changeIt()">
+        <br><input type='text' id='mytext' >
+        <div id="createTextbox"></div>
+        <p id="p1">None</p>
+    </body>
+</html>
